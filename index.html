@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style.css">
+        <title>Formulário de pesquisa</title>
+
+    </head>
+
+    <header>
+        <h1>Formulário de pesquisa</h1>
+        <p>Obrigado por nos ajudar a melhorar nossos serviços</p>
+    </header>
+
+    <body>
+        <div class="container">
+            <form class="form">
+
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome:" required>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email" required/>
+                </div>
+
+                <div class="form-group">
+                    <label for="idade">Idade</label>
+                    <input type="number" id="idade" name="idade" min="10" max="99" placeholder="idade" required/>
+                </div>
+
+                <div class="form-group">
+                    <label for="situação">Qual opçaõ descreve sua situação atual?</label>
+                    <select id="dropdown" name="situação" required>
+                        <option value="disabel selected value">Escolha sua opção</option>
+                        <option value="student">Estudante</option>
+                        <option value="job">Empregado</option>
+                        <option value="learner"> Empregado meio periodo</option>
+                        <option value="preferNo">Prefiro não responder</option>
+                        <option value="other">Outro</option>
+                    </select>
+                </div>
+
+                <div calss="form-radio-checkbox">
+                    <label>Recomenda nossos serviços?</label>
+                    <label>
+                        <input type="radio" name="recommend" value="sim" class="input-radio">Sim
+
+                    </label>
+
+                    <label>
+                        <input type="radio" name="recommend" value="não" class="input-radio">Não
+                        
+                    </label>
+
+                    <label>
+                        <input type="radio" name="recommend" value="talvez" class="input-radio">talvez
+
+                </div>
+
+                <div class="form-group">
+                    <label for="servico">Qual seu serviço favorito?</label>
+                    <select id="dropdown" name="servico" required>
+                        <option value="disable selected value">Escolha sua opção</option>
+                        <option value="webdesing">web desing</option>
+                        <option value="uxui">UX/UI</option>
+                        <option value="frontend">Front-End</option>
+                        <option value="preferNo">Prefiro não respoder</option>
+                        <option value="other">Outro</option>
+                    </select>
+
+                </div>
+
+                <div class="form-radio-checkbox">
+                    <label>Em que itens você gostaria de ver melhorias?</label>
+
+                    <label><input type="checkbox" name="melhorias" value="projetos-de-front-end" class="input-checkbox"/>Projetos Front-End</label>
+
+                    <label><input type="checkbox" name="melhorias" value="projetos-de-Back-end" class="input-checkbox"/>Projetos Back-End</label>
+
+                    <label><input type="checkbox" name="melhorias" value="visualização de dados" class="input-checkbox"/>Visualização de dados</label>
+
+                    <label><input type="checkbox" name="melhorias" value="postagens-instagram" class="input-checkbox"/>Postagens-Instagram</label>
+
+                    <label><input type="checkbox" name="melhorias" value="videos" class="input-checkbox"/>Videos</label>
+
+                    <label><input type="checkbox" name="melhorias" value="desafios" class="input-checkbox"/>Desafios</label>
+
+                    <label><input type="checkbox" name="melhorias" value="forum" class="input-checkbox"/>Forum</label>
+
+                    <label><input type="checkbox" name="melhorias" value="cursos" class="input-checkbox"/>Cursos</label>
+                </div>
+
+                <div class="form-textarea">
+                    <label>Algum comentario ou sugestão?</label>
+                    <textarea name="mensagem" cols="60" rows="6" placeholder="Digite aqui sua mensagem"></textarea>
+
+                </div>
+
+                <div class="form-group">
+                    <button oneclick="enviar()">Enviar</button>
+                </div>
+
+            </form>
+
+            <footer>
+                <p><strong>Matheus.bp</strong>2024</p>
+            </footer>
+        </div>
+    </body>
+</html>
